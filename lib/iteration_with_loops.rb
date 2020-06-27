@@ -8,10 +8,10 @@ def find_min_in_nested_arrays(src)
       while temp_index < src[row_index].count do 
         if src[row_index][temp_index] < low 
           low = src[row_index][temp_index]
-          daily_low << low 
         end 
         temp_index += 1 
       end 
+      daily_low << low 
       row_index += 1 
   end 
   daily_low
